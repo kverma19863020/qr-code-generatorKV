@@ -9,9 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Build Docker Image
-      run: docker build -t qr-code-generatorKV .
+      - name: Build Docker Image
+        run: docker build -t qr-code-generatorkv .
