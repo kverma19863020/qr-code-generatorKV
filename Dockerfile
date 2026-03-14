@@ -15,10 +15,8 @@ RUN useradd -m myuser && mkdir logs qr_codes && chown myuser:myuser logs qr_code
 
 # Copy project files
 COPY --chown=myuser:myuser . .
-
 # Switch user
 USER myuser
-
 # Run application
 ENTRYPOINT ["python", "main.py"]
 CMD ["--url", "http://github.com"]
